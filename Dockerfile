@@ -1,11 +1,11 @@
-FROM node:10-alpine
+FROM node:12
 
 ADD . /code
 WORKDIR /code
 
 # Install Dependencies
-RUN npm install -g try-thread-sleep && npm install -g serverless --ignore-scripts spawn-sync
-RUN npm install -g serverless-offline
+RUN npm install try-thread-sleep && npm install -g serverless --ignore-scripts spawn-sync
+RUN npm install serverless-offline
 
 # Expose container port
 EXPOSE 3000

@@ -58,7 +58,7 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  getURL:
+  helloWorld:
     handler: handler.lambda_handler
     events:
       - http:
